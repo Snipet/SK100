@@ -16,6 +16,7 @@ float ratios[7] = {
   5.f
 };
 
+
 SK100::SK100(const InstanceInfo& info)
 : Plugin(info, MakeConfig(kNumParams, kNumPresets))
 {
@@ -30,7 +31,7 @@ SK100::SK100(const InstanceInfo& info)
   GetParam(kComp2InGain)->InitDouble("Comp 2 Input", 0., -10., 10., 0.01, "db");
   GetParam(kComp2OutGain)->InitDouble("Comp 2 Output", 0., -10., 10., 0.01, "db");
   GetParam(kComp2Attack)->InitDouble("Comp 2 Attack", 20., 1., 200., 0.01, "ms", 0, "", IParam::ShapePowCurve(2.5));
-  GetParam(kComp2Release)->InitDouble("Comp 2 Release", 20., 1., 200., 0.01, "ms", 0, "", IParam::ShapePowCurve(2.5));
+  GetParam(kComp2Release)->InitDouble("Comp 2 Release", 100., 1., 2000., 0.01, "ms", 0, "", IParam::ShapePowCurve(2.5));
   GetParam(kComp2Threshold)->InitDouble("Comp 2 Threshold", 0., -20, 0, 0.01, "db");
   GetParam(kComp2Ratio)->InitEnum("Comp 2 Ratio", 0, { "1.3", "1.6", "2", "2.5", "3", "4", "5" });
   GetParam(kVUView)->InitEnum("VU Meter View", 1, {"Comp 1", "Both", "Comp 2"});
