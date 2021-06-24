@@ -31,7 +31,7 @@ public:
     value = 0;
   }
 
-  void Draw(IGraphics& g) {
+  void Draw(IGraphics& g) override{
     float db = filter.tick(value);
     db = Clip(db, 0.f, 12.f);
     int n = ((db) / 12.f) * 45;

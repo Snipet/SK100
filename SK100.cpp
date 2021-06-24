@@ -42,7 +42,7 @@ SK100::SK100(const InstanceInfo& info)
   };
   
   mLayoutFunc = [&](IGraphics* pGraphics) {
-    pGraphics->AttachCornerResizer(EUIResizerMode::Scale, false);
+
     pGraphics->AttachBackground(BACKGROUND_FN);
     pGraphics->LoadFont("Roboto-Regular", ROBOTO_FN);
     pGraphics->AttachBubbleControl(new IBubbleControl(IText(21.f, EAlign::Center, IColor(255, 245, 245, 245)), IColor(255, 20, 20, 20), IColor(255, 15, 15, 15)));

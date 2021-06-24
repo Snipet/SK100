@@ -66,4 +66,4 @@
 #define KNOB11_FN "knob11.png"
 #define KNOB12_FN "knob12.png"
 #define VUMETER_FN "vumeter.png"
-#define VIEWBUTTONS_FN "viewbuttons.png"
+#define VIEWBUTTONS_FN "viewButtons.png"
