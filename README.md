@@ -1,2 +1,2 @@
 # SK100
-A basic volume control effect plug-in with IGraphics GUI
+A dual, stereo compressor (and it's free!)
