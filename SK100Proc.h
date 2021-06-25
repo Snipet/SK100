@@ -289,7 +289,7 @@ public:
         }
       }
       else {
-        v = 1;
+        v = 0.96;
       }
       gain = interpolate(1, level, v, 0.9);
     }

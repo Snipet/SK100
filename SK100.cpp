@@ -23,7 +23,7 @@ SK100::SK100(const InstanceInfo& info)
 
   GetParam(kComp1InGain)->InitDouble("Comp 1 Input", 0., -10., 10., 0.01, "db");
   GetParam(kComp1OutGain)->InitDouble("Comp 1 Output", 0., -10., 10., 0.01, "db");
-  GetParam(kComp1Attack)->InitDouble("Comp 1 Attack", 20., 0., 200., 0.01, "ms", 0, "", IParam::ShapePowCurve(2.5));
+  GetParam(kComp1Attack)->InitDouble("Comp 1 Attack", 20., 1., 200., 0.01, "ms", 0, "", IParam::ShapePowCurve(2.5));
   GetParam(kComp1Release)->InitDouble("Comp 1 Release", 20., 1., 200., 0.01, "ms", 0, "", IParam::ShapePowCurve(2.5));
   GetParam(kComp1Threshold)->InitDouble("Comp 1 Threshold", 0., -20, 0, 0.01, "db");
   GetParam(kComp1Ratio)->InitDouble("Comp 1 Ratio", 2., 1., 10., 0.1, "", 0, "", IParam::ShapePowCurve(2.3));
